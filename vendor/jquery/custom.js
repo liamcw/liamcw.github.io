@@ -1,22 +1,3 @@
-
-// jQuery(document).ready(function($) {
-//     var quotes = $(".rotate-text li");
-//   var quoteIndex = -1;
-
-//   function showNextQuote() {
-//       ++quoteIndex;
-//       var quote = quotes.eq(quoteIndex % quotes.length);
-        
-//       quote.addClass('active')
-//       setTimeout(function() {
-//         quote.removeClass('active');
-//         showNextQuote();
-//       }, 1500);
-//   }
-
-//   showNextQuote();
-// });
-
 var btn = $('#button');
 
 $(window).scroll(function() {
