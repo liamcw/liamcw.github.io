@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Liam Chan-Wicht</title>
+  <link href="vendor/bootstrap/css/animate.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Animate by Daneden CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+</head>
+
+<body>
+
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row p-5">
+      <div class="col-11">
+        <img class="img-fluid center-block" src="img/headshot.jpg" alt="headshot" id="headshot" style="height: 100%;">
+        <div class="carousel-caption">
+          <div class="row">
+            <div class="col-2">
+            </div>
+            <div class="col-5" ">
+              <h3 id=" hi" style="float: right;">
+              and I am a
+              </h3>
+              <h3 id="hi" style="float: right; color: gold;">
+                Liam&nbsp;
+              </h3>
+              <h3 id="hi" style="float: right;">
+                I'm&nbsp;
+              </h3>
+            </div>
+    <!-- Fade out/in animation-->
+            <div class="col-5">
+              <h3 class="quotes" style="float: left;">Web Dev</h3>
+              <h3 class="quotes" style="float: left;">Designer</h3>
+              <h3 class="quotes" style="float: left;">Programmer</h3>
+              <h3 class="quotes" style="float: left;">Creative</h3>
+              <h3 class="quotes" style="float: left;">Problem Solver</h3>
+              <h3 class="quotes" style="float: left;">Human Male</h3>
+              <h3 class="quotes" style="float: left;">Photographer</h3>
+              <h3 class="quotes" style="float: left;">Jungle Main</h3>
+              <h3 class="quotes" style="float: left;">半中文</h3>
+              <h3 class="quotes" style="float: left;">'rockstar'</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End anim-->
+      <!--Nav-->
+      <div class="col-1">
+        <ul class="nav flex-column "id="nav">
+         
+          <li class="nav-item">
+            <a class="nav-link active" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:https://aemail.com/68Xl">Contact</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        
+          <a id="button"></a>
+
+          
+        </ul>
+      </div>
+    </div>
+      <!--End Nav-->
+   
+<!--Start Projects-->
+    <div class="row p-5 mt-5">
+      <div class="col-11 text-center">
+        <h1 id="projects">
+          Projects
+        </h1>
+      </div>
+      <div class="col-1 text-center">
+      </div>
+    </div>
+
+    <div class="row p-5 mt-5 justify-content-center">
+     
+      <div class="col text-center">
+          <img src="img/20191126-DSC_0134.jpg" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col text-center">
+        <img src="img/20191126-DSC_0134.jpg" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-1 text-center">
+      </div>
+     
+    </div>
+
+    <div class="row p-5 mt-5 justify-content-center">
+     
+      <div class="col text-center">
+          <img src="img/20191126-DSC_0134.jpg" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col text-center">
+        <img src="img/20191126-DSC_0134.jpg" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-1 text-center">
+      </div>
+     
+    </div>
+    <div class="row p-5 mt-5 justify-content-center">
+     
+      <div class="col text-center">
+          <img src="img/20191126-DSC_0134.jpg" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col text-center">
+        <img src="img/20191126-DSC_0134.jpg" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-1 text-center">
+      </div>
+     
+    </div>
+    <div class="row p-5 mt-5 justify-content-center">
+     
+      <div class="col text-center">
+          <img src="img/20191126-DSC_0134.jpg" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col text-center">
+        <img src="img/20191126-DSC_0134.jpg" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-1 text-center">
+      </div>
+     
+    </div>
+
+<!--End Projects-->
+  </div>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/custom.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery/custom.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+
+      var quotes = $(".quotes");
+      var quoteIndex = -1;
+
+      function showNextQuote() {
+        ++quoteIndex;
+        quotes.eq(quoteIndex % quotes.length)
+          .fadeIn(1000)
+          .delay(900)
+          .fadeOut(1000, showNextQuote);
+      }
+
+      showNextQuote();
+
+    })();
+  </script>
+
+</body>
+
+
+
+</html>
